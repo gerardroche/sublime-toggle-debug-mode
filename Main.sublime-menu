@@ -1,0 +1,10 @@
+[
+    { "id": "help" },
+    {
+        "id": "developer-tools",
+        "caption": "Developer Tools",
+        "children": [
+            { "command": "toggle_debug_mode" },
+        ]
+    }
+]

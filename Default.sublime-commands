@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Toggle Debug Mode",
+        "command": "toggle_debug_mode"
+    }
+]
