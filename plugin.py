@@ -14,7 +14,7 @@ class ToggleDebugModeCommand(sublime_plugin.ApplicationCommand):
 
         sublime.log_build_systems(self.enabled)
         sublime.log_commands(self.enabled)
-        # sublime.log_indexing(self.enabled)
+        sublime.log_indexing(self.enabled)
         sublime.log_input(self.enabled)
         sublime.log_result_regex(self.enabled)
         if int(sublime.version()) >= 4064:
