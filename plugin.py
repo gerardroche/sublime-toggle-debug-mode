@@ -2,7 +2,7 @@ import sublime
 import sublime_plugin
 
 
-class ToggleDebugModeCommand(sublime_plugin.ApplicationCommand):
+class ToggleDebugMode(sublime_plugin.ApplicationCommand):
 
     enabled = False
 
