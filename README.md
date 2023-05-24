@@ -15,3 +15,7 @@ Install via [Package Control](https://packagecontrol.io/packages/ToggleDebugMode
 Command                         | Description
 :------------------------------ | :----------
 **Toggle&nbsp;Debug&nbsp;Mode** | Toggle debug mode.
+
+## License
+
+Released under the [GPL-3.0-or-later License](LICENSE).
