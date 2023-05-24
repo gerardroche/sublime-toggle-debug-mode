@@ -24,7 +24,7 @@ class ToggleDebugMode(sublime_plugin.ApplicationCommand):
     enabled = False
 
     def description(self):
-        return '%s Debug Mode' % ('Disable' if self.enabled else 'Enable',)
+        return '%s Debug Mode' % ('Disable' if self.enabled else 'Enable')
 
     def run(self):
         self.enabled = not self.enabled
