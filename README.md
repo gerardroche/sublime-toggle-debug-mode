@@ -1,16 +1,26 @@
 # Toggle Debug Mode
 
-A Sublime Text plugin to turn Sublime Text console logging on and off. Loggers include command, input, result_regex, indexing, build_systems, control_tree, and fps. See [Sublime Text API Documentation](https://www.sublimetext.com/docs/api_reference.html) for more information.
+Toggle Sublime Text debug logging.
+
+- **Command**: Control whether commands are logged to the console when run
+- **Input**: Control whether all key presses will be logged to the console. Use this to find the names of certain keys on the keyboard.
+- **Result Regex**: Control whether result regex logging is enabled. Use this to debug `"file_regex"` and `"line_regex"` in build systems.
+- **Indexing**: Control whether indexing logs are printed to the console.
+- **Build Systems**: Control whether build system logs are printed to the console.
+- **Control Tree**: Control whether control tree logging is enabled. When enabled clicking with ctrl+alt will log the control tree under the mouse to the console.
+- **FPS**: Control whether rendering timings like frames per second get logged.
+
+See [Sublime Text API Documentation](https://www.sublimetext.com/docs/api_reference.html) for more details on console logging.
 
 ## Installation
 
-Install via [Package Control](https://packagecontrol.io/packages/ToggleDebugMode).
+Install ToggleDebugMode via [Package Control](https://packagecontrol.io/packages/ToggleDebugMode).
 
 ## Commands
 
-Command                         | Description
-:------------------------------ | :----------
-**Toggle&nbsp;Debug&nbsp;Mode** | Toggle debug mode.
+Command               | Description
+:-------------------- | :----------
+**Toggle Debug Mode** | Toggle Sublime Text console debug logging.
 
 ## License
 
