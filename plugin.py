@@ -23,24 +23,55 @@ class ToggleDebugMode(sublime_plugin.ApplicationCommand):
 
     enabled = False
 
-    def description(self) -> str:
-        return '%s Debug Mode' % ('Disable' if self.enabled else 'Enable')
+    named = {
+        'build_system': False,
+        'command': False,
+        'control_tree': False,
+        'fps': False,
+        'index': False,
+        'input': False,
+        'result_regex': False,
+    }  # type: dict
 
-    def run(self) -> None:
-        self.enabled = not self.enabled
+    def run(self, logger=None, enable=None) -> None:
+        if enable is not None:
+            flag = self.enabled = enable
+            for named in self.named:
+                self.named[named] = flag
+        elif logger:
+            flag = self.named[logger] = not self.named[logger]
+        else:
+            flag = self.enabled = not self.enabled
+            for named in self.named:
+                self.named[named] = flag
 
-        sublime.log_commands(self.enabled)
-        sublime.log_input(self.enabled)
-        sublime.log_result_regex(self.enabled)
+        if logger == 'command' or not logger:
+            sublime.log_commands(flag)
+
+        if logger == 'input' or not logger:
+            sublime.log_input(flag)
+
+        if logger == 'result_regex' or not logger:
+            sublime.log_result_regex(flag)
 
         if int(sublime.version()) >= 3009:
-            sublime.log_indexing(self.enabled)
+            if logger == 'index' or not logger:
+                sublime.log_indexing(flag)
 
         if int(sublime.version()) >= 3076:
-            sublime.log_build_systems(self.enabled)
+            if logger == 'build_system' or not logger:
+                sublime.log_build_systems(flag)
 
         if int(sublime.version()) >= 4064:
-            sublime.log_control_tree(self.enabled)
+            if logger == 'control_tree' or not logger:
+                sublime.log_control_tree(flag)
 
         if int(sublime.version()) >= 4075:
-            sublime.log_fps(self.enabled)
+            if logger == 'fps' or not logger:
+                sublime.log_fps(flag)
+
+    def description(self, logger=None) -> str:
+        if logger:
+            return '%s %s' % ('Disable' if self.named[logger] else 'Enable', logger)
+
+        return '%s Debug Mode' % ('Disable' if self.enabled else 'Enable')
