@@ -1,4 +1,4 @@
-# Debug Mode Toggling
+# Sublime Debug Logging
 
 Enhance your Sublime Text debugging experience with these toggleable debug logging options:
 
@@ -10,7 +10,7 @@ Enhance your Sublime Text debugging experience with these toggleable debug loggi
 - **Control Tree Logging**: Toggle the logging of control tree information. When enabled, pressing `ctrl+alt` and clicking will log the control tree under the mouse to the console.
 - **FPS Logging**: Toggle the logging of rendering timings, such as frames per second.
 
-For more comprehensive information, refer to [Sublime Text's API Documentation](https://www.sublimetext.com/docs/api_reference.html).
+For more comprehensive information about logging, refer to [Sublime Text's API Documentation](https://www.sublimetext.com/docs/api_reference.html).
 
 ## Installation
 
@@ -45,17 +45,17 @@ For more comprehensive information, refer to [Sublime Text's API Documentation](
 
 Fine-tune your debugging experience with these powerful commands:
 
-| Command                                            | Description                                       |
-| :------------------------------------------------- | :------------------------------------------------ |
-| **ToggleDebugMode: Logging - Disable all**         | Disable all logging                               |
-| **ToggleDebugMode: Logging - Enable all**          | Enable all logging                                |
-| **ToggleDebugMode: Logging - Toggle Build System** | Toggle build system logging                       |
-| **ToggleDebugMode: Logging - Toggle Command**      | Toggle command logging                            |
-| **ToggleDebugMode: Logging - Toggle Control Tree** | Toggle control tree logging                       |
-| **ToggleDebugMode: Logging - Toggle Fps**          | Toggle FPS logging                                |
-| **ToggleDebugMode: Logging - Toggle Index**        | Toggle index logging                              |
-| **ToggleDebugMode: Logging - Toggle Input**        | Toggle input logging                              |
-| **ToggleDebugMode: Logging - Toggle Result Regex** | Toggle result regex logging                       |
+| Command                                             | Description                    |
+| :-------------------------------------------------- | :----------------------------- |
+| **ToggleDebugMode: Disable Logging**                | Disable all logging            |
+| **ToggleDebugMode: Enable Logging**                 | Enable all logging             |
+| **ToggleDebugMode: Toggle Build System Logging**    | Toggle build system logging    |
+| **ToggleDebugMode: Toggle Command Logging**         | Toggle command logging         |
+| **ToggleDebugMode: Toggle Control Tree Logging**    | Toggle control tree logging    |
+| **ToggleDebugMode: Toggle Fps Logging**             | Toggle FPS logging             |
+| **ToggleDebugMode: Toggle Index Logging**           | Toggle index logging           |
+| **ToggleDebugMode: Toggle Input Logging**           | Toggle input logging           |
+| **ToggleDebugMode: Toggle Result Regex Logging**    | Toggle result regex logging    |
 
 Experience enhanced debugging functionalities. Try out these commands to streamline your debugging process.
 

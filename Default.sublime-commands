@@ -1,11 +1,11 @@
 [
-    { "caption": "ToggleDebugMode: Logging - Disable all", "command": "toggle_debug_mode", "args": {"enable": false} },
-    { "caption": "ToggleDebugMode: Logging - Enable all", "command": "toggle_debug_mode", "args": {"enable": true} },
-    { "caption": "ToggleDebugMode: Logging - Toggle Build System", "command": "toggle_debug_mode", "args": { "logger": "build_system" } },
-    { "caption": "ToggleDebugMode: Logging - Toggle Command", "command": "toggle_debug_mode", "args": { "logger": "command" } },
-    { "caption": "ToggleDebugMode: Logging - Toggle Control Tree", "command": "toggle_debug_mode", "args": { "logger": "control_tree" } },
-    { "caption": "ToggleDebugMode: Logging - Toggle Fps", "command": "toggle_debug_mode", "args": { "logger": "fps" } },
-    { "caption": "ToggleDebugMode: Logging - Toggle Index", "command": "toggle_debug_mode", "args": { "logger": "index" } },
-    { "caption": "ToggleDebugMode: Logging - Toggle Input", "command": "toggle_debug_mode", "args": { "logger": "input" } },
-    { "caption": "ToggleDebugMode: Logging - Toggle Result Regex", "command": "toggle_debug_mode", "args": { "logger": "result_regex" } }
+    { "caption": "ToggleDebugMode: Disable Logging", "command": "toggle_debug_mode", "args": {"enable": false} },
+    { "caption": "ToggleDebugMode: Enable Logging", "command": "toggle_debug_mode", "args": {"enable": true} },
+    { "caption": "ToggleDebugMode: Toggle Build System Logging", "command": "toggle_debug_mode", "args": { "logger": "build_system" } },
+    { "caption": "ToggleDebugMode: Toggle Command Logging", "command": "toggle_debug_mode", "args": { "logger": "command" } },
+    { "caption": "ToggleDebugMode: Toggle Control Tree Logging", "command": "toggle_debug_mode", "args": { "logger": "control_tree" } },
+    { "caption": "ToggleDebugMode: Toggle Fps Logging", "command": "toggle_debug_mode", "args": { "logger": "fps" } },
+    { "caption": "ToggleDebugMode: Toggle Index Logging", "command": "toggle_debug_mode", "args": { "logger": "index" } },
+    { "caption": "ToggleDebugMode: Toggle Input Logging", "command": "toggle_debug_mode", "args": { "logger": "input" } },
+    { "caption": "ToggleDebugMode: Toggle Result Regex Logging", "command": "toggle_debug_mode", "args": { "logger": "result_regex" } }
 ]
