@@ -1,64 +1,63 @@
 # Sublime Debug Logging
 
-Enhance your Sublime Text debugging experience with these toggleable debug logging options:
+Boost your Sublime Text debugging with this plugin. Adds commands to enable or disable editor logging features from the Command Palette.
 
-- **Command Logging**: Toggle the logging of commands to the console when executed.
-- **Input Logging**: Toggle the logging of all key presses to the console. Useful for identifying specific keyboard key names.
-- **Result Regex Logging**: Toggle the logging of result regexes. Useful for debugging `"file_regex"` and `"line_regex"` in build systems.
-- **Index Printing**: Toggle the printing of indexing logs to the console.
-- **Build System Logging**: Toggle the printing of build system logs to the console.
-- **Control Tree Logging**: Toggle the logging of control tree information. When enabled, pressing `ctrl+alt` and clicking will log the control tree under the mouse to the console.
-- **FPS Logging**: Toggle the logging of rendering timings, such as frames per second.
+## Features
 
-For more comprehensive information about logging, refer to [Sublime Text's API Documentation](https://www.sublimetext.com/docs/api_reference.html).
+- **Command Logging**: Logs executed commands to the console.
+- **Input Logging**: Captures all key presses—perfect for identifying key names.
+- **FPS Logging**: Tracks rendering timings, like frames per second.
+- **Result Regex Logging**: Debugs `"file_regex"` and `"line_regex"` in build systems.
+- **Indexing Logging**: Prints indexing logs to the console.
+- **Build System Logging**: Monitors build system activity.
+- **Control Tree Logging**: Logs the control tree under the mouse when clicking with `Ctrl+Alt` (Windows/Linux) or `Cmd+Alt` (macOS).
+
+For detailed API info, see the [Sublime Text API Documentation](https://www.sublimetext.com/docs/api_reference.html).
 
 ## Installation
 
-**Method 1: Using Package Control**
+Choose your preferred method to install the `ToggleDebugMode` plugin:
 
-1. Open Sublime Text.
-2. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS) to open the Command Palette.
-3. Type "Package Control: Install Package" and press `Enter`.
-4. In the input field, type "ToggleDebugMode" and select it from the list of available packages.
+### Option 1: Package Control
+1. Open Sublime Text and press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS).
+2. Type `Package Control: Install Package` and hit `Enter`.
+3. Search for `ToggleDebugMode` and select it to install.
 
-**Method 2: Manual Installation**
-
-1. Visit the [ToggleDebugMode GitHub repository](https://github.com/gerardroche/sublime-toggle-debug-mode).
-2. Click on the "Code" button and select "Download ZIP."
-3. Extract the downloaded ZIP file.
-4. Open Sublime Text and go to `Preferences -> Browse Packages...` to open the Packages folder.
-5. Copy the "ToggleDebugMode" folder from the extracted ZIP and paste it into the Packages folder.
-
-**Method 3: Manual Git Repository Installation**
-
-1. Open a terminal or command prompt.
-2. Navigate to the Sublime Text Packages directory:
-    - On Windows: `%APPDATA%\Sublime Text\Packages`
-    - On macOS: `~/Library/Application Support/Sublime Text/Packages`
-    - On Linux: `~/.config/sublime-text/Packages`
-3. Clone the plugin repository directly into the Packages directory using Git:
+### Option 2: Git Clone
+1. Open a terminal and navigate to your Sublime Text Packages folder:
+   - Windows: `%APPDATA%\Sublime Text\Packages`
+   - macOS: `~/Library/Application Support/Sublime Text/Packages`
+   - Linux: `~/.config/sublime-text/Packages`
+2. Run:
    ```
    git clone https://github.com/gerardroche/sublime-toggle-debug-mode.git ToggleDebugMode
    ```
 
-## Commands
+## Available Commands
 
-Fine-tune your debugging experience with these powerful commands:
+Access these commands via the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) to customize your debugging:
 
-| Command                                             | Description                    |
-| :-------------------------------------------------- | :----------------------------- |
-| **ToggleDebugMode: Disable Logging**                | Disable all logging            |
-| **ToggleDebugMode: Enable Logging**                 | Enable all logging             |
-| **ToggleDebugMode: Toggle Build System Logging**    | Toggle build system logging    |
-| **ToggleDebugMode: Toggle Command Logging**         | Toggle command logging         |
-| **ToggleDebugMode: Toggle Control Tree Logging**    | Toggle control tree logging    |
-| **ToggleDebugMode: Toggle Fps Logging**             | Toggle FPS logging             |
-| **ToggleDebugMode: Toggle Index Logging**           | Toggle index logging           |
-| **ToggleDebugMode: Toggle Input Logging**           | Toggle input logging           |
-| **ToggleDebugMode: Toggle Result Regex Logging**    | Toggle result regex logging    |
+| Command                            | Description                          |
+|------------------------------------|--------------------------------------|
+| `ToggleDebugMode: Enable Logging`  | Activates all logging features       |
+| `ToggleDebugMode: Disable Logging` | Deactivates all logging features     |
+| `ToggleDebugMode: Toggle Command Logging`       | Toggles command logging       |
+| `ToggleDebugMode: Toggle Input Logging`         | Toggles key press logging     |
+| `ToggleDebugMode: Toggle FPS Logging`           | Toggles FPS logging           |
+| `ToggleDebugMode: Toggle Result Regex Logging`  | Toggles regex logging         |
+| `ToggleDebugMode: Toggle Index Logging`         | Toggles indexing logging      |
+| `ToggleDebugMode: Toggle Build System Logging`  | Toggles build system logging  |
+| `ToggleDebugMode: Toggle Control Tree Logging`  | Toggles control tree logging  |
 
-Experience enhanced debugging functionalities. Try out these commands to streamline your debugging process.
+## Usage Tips
+- Use `Input Logging` to troubleshoot key bindings.
+- Enable `Result Regex Logging` to refine build system regex patterns.
+- Activate `Control Tree Logging` and click with `Ctrl+Alt`/`Cmd+Alt` to inspect UI elements.
 
 ## License
 
-Released under the [GPL-3.0-or-later License](LICENSE).
+This plugin is released under the [GPL-3.0-or-later License](LICENSE).
+
+---
+
+Happy debugging!
