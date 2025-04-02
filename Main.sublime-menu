@@ -7,15 +7,15 @@
             {
                 "caption": "Logging",
                 "children": [
-                    { "command": "toggle_debug_mode", "args": {"logger": "build_system"}},
-                    { "command": "toggle_debug_mode", "args": {"logger": "command"}},
-                    { "command": "toggle_debug_mode", "args": {"logger": "control_tree"}},
-                    { "command": "toggle_debug_mode", "args": {"logger": "fps"}},
-                    { "command": "toggle_debug_mode", "args": {"logger": "index"}},
-                    { "command": "toggle_debug_mode", "args": {"logger": "input"}},
-                    { "command": "toggle_debug_mode", "args": {"logger": "result_regex"}},
-                    { "caption": "Disable all", "command": "toggle_debug_mode", "args": {"enable": false} },
-                    { "caption": "Enable all", "command": "toggle_debug_mode", "args": {"enable": true} },
+                    { "command": "toggle_debug_mode", "args": {"logger": "build_system"} },
+                    { "command": "toggle_debug_mode", "args": {"logger": "command"} },
+                    { "command": "toggle_debug_mode", "args": {"logger": "control_tree"} },
+                    { "command": "toggle_debug_mode", "args": {"logger": "fps"} },
+                    { "command": "toggle_debug_mode", "args": {"logger": "index"} },
+                    { "command": "toggle_debug_mode", "args": {"logger": "input"} },
+                    { "command": "toggle_debug_mode", "args": {"logger": "result_regex"} },
+                    { "caption": "-" },
+                    { "command": "toggle_debug_mode" },
                 ]
             }
         ]

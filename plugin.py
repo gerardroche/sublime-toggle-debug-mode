@@ -70,8 +70,9 @@ class ToggleDebugMode(sublime_plugin.ApplicationCommand):
             if logger == 'fps' or not logger:
                 sublime.log_fps(flag)
 
-    def description(self, logger=None) -> str:
+    def description(self, logger=None, enable=None) -> str:
         if logger:
             return '%s %s' % ('Disable' if self.named[logger] else 'Enable', logger)
-
-        return '%s Debug Mode' % ('Disable' if self.enabled else 'Enable')
+        if self.enabled:
+            return 'Disable All Logging'
+        return 'Enable All Logging'
